@@ -1,0 +1,257 @@
+/*fonts*/
+
+@import "fonts.css";
+
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Specification*/
+
+
+*:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+body{
+	font-family: "Montserrat", "Arial", sans-serif;
+	padding: 0;
+	margin: 0;
+	letter-spacing: 0.02em;
+	font-size: 18px;
+	color: #090808;
+	transition: all 0.5 ease;
+	font-weight: 500;
+	line-height: 1.5em;
+  	min-height: 100vh;
+ 	 scroll-behavior: smooth;
+ 	 text-rendering: optimizeSpeed;
+}
+
+}
+
+.container{
+	margin: 0 auto;
+	padding: 0;
+	width: 1170px;
+}
+
+.div, p, form, input, a, span, button{
+	box-sizing: border-box;
+}
+
+ul, li{
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+	line-height: 1.2em;
+	color: #090808;
+	font-weight: 900;
+	text-align: center;
+}
+
+h1{
+	font-size: 38px;
+	color: #fff;
+}
+
+h2{
+	font-size: 30px;
+}
+
+h3{
+	font-size: 23px;
+}
+
+h4{
+	font-size: 21px;
+	font-weight: 600;
+}
+
+h5{
+	font-size: 15px;
+	color: #fff;
+	font-weight: 800;
+}
+
+a, a:hover, a:active{
+	text-decoration: none;
+	color: inherit;
+}
+
+.btn{
+	color: #fff;
+	background: #26a65b;
+	border: 2px solid #26a65b;
+	font-size: 18px;
+	font-weight: 800;
+	width: 195px;
+	padding: 12px 4px;
+	border-radius: 7px;
+	text-align: center;
+	cursor: pointer;
+	box-shadow: 4px 4px 50px rgba(0,0,0,0.18);
+	transition: all 0.5s ease;
+}
+
+.btn:hover{
+	background: transparent;
+	border: 2px solid #fff;
+	box-shadow: 4px 4px 30px rgba(0,0,0,0.38)
+}
+.d-flex{
+	display: flex;
+}
+
+.align-center{
+	align-items: center;
+}
+
+.space-between{
+	justify-content: space-between;
+}
+
+.space-around{
+	justify-content: space-around;
+}
+
+.text-center{
+	text-align: center;
+}
+
+
+/*Header*/
+
+
+.container{
+	width: 1170px;
+}
+
+.logo{
+
+}
+
+.nav{
+
+}
+
+.nav__item{
+
+}
+
+.quote-btn{
+
+}
+
+.social{
+
+}
+
+.fa-facebook-f{
+
+}
+
+.fa-twitter{
+
+}
+
+.fa-youtube{
+
+}
+
+.fa-instagram{
+
+}
