@@ -103,6 +103,9 @@ h3{
 
 h4{
 	font-size: 24px;
+	color: #c04ae2;
+	font-weight: 800;
+	font-family: "Overpass", "Arial", sans-serif;
 }
 
 /*h5{
@@ -130,8 +133,8 @@ img{
 	text-align: center;
 	cursor: pointer;
 	transition: all 0.3s ease;
-	width: 241px;
-	height: 72px;
+	width: 205px;
+	height: 60px;
 }
 
 .btn:hover{
@@ -164,8 +167,10 @@ img{
 /*Header*/
 
 header{
-	background-image: url(../img/header-bg.png);
+	background-image: url(../img/header-blurElement.png);
 	background-color: rgb(235, 234, 250);
+	margin-bottom: 185px;
+	background-size: 100%;	
 }
 
 .head{
@@ -196,8 +201,8 @@ nav{
   	border-color: rgb(192, 74, 226);
   	border-radius: 7px;
   	top: 44px;
-  	width: 185px;
-  	height: 48px;
+ 	width: 180px;
+	height: 45px;
   	background-color: transparent;
   	font-weight: 800;
   	font-size: 18px;
@@ -265,3 +270,121 @@ nav{
 	margin-top: 65px;
 }
 
+
+/*Intro*/
+
+
+.intro{
+	background-image: url(../img/intro-blurElement.png);
+	background-size: 100%;
+}
+
+.intro__title{
+	text-transform: uppercase;
+}
+
+.intro__text{
+	margin: 30px auto;
+	width: 810px;
+}
+
+.advantages{
+	margin-top: 115px;
+}
+
+
+.advantage{
+	width: 360px;
+	text-align: center;
+	border: 6px solid #888;
+	border-radius: 18px;
+	padding: 40px 50px;
+}
+
+.advantage1_color{
+	border-color: #fcd7df;
+}
+
+.advantage2_color{
+	border-color: #c9f3e2;
+}
+
+.advantage3_color{
+	border-color: #f2d5ba;
+}
+
+.advantage-img{
+	width: 84px;
+	height: 84px;
+}
+
+.advantage__title{
+	margin-top: 50px;
+}
+
+.advantage__text{
+	margin-top: 40px;
+	font-family: "Roboto", "Arial", sans-serif;
+	color: #5e5858;
+}
+
+
+/*About*/
+
+
+.about{
+	margin-top: 220px;
+}
+
+.about__content{
+	width: 50%;
+
+}
+
+.about__title{
+	text-align: left;
+}
+
+.about__text1{
+	font-size: 24px;
+	text-align: left;
+	color: #5e5858;
+	margin: 30px 0;
+}
+
+.about__text2{
+	font-size: 20px;
+	text-align: left;
+	color: #5e5858;
+}
+
+.know-btn{
+	margin-top: 50px;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.about-img{
+	margin-left: 150px;
+	width: 740px;
+	position: relative;
+
+}
+
+
+
+.about1{
+	width: 400px;
+	height: 408px;
+	position: absolute;
+	top: 0;
+	left: 0	;
+}
+
+.about2{
+	width: 400px;
+	height: 408px;
+	position: absolute;
+	top: 150px;
+	left: 330px;
+}
