@@ -385,23 +385,19 @@ nav
     border-radius: 18px;
 }
 
-.advantage1_color
-{
+.advantage1_color{
     border-color: #fcd7df;
 }
 
-.advantage2_color
-{
+.advantage2_color{
     border-color: #c9f3e2;
 }
 
-.advantage3_color
-{
+.advantage3_color{
     border-color: #f2d5ba;
 }
 
-.advantage-img
-{
+.advantage-img{
     width: 84px;
     height: 84px;
 }
@@ -525,8 +521,7 @@ nav
     position: relative;
 }
 
-.border
-{
+.border{
     position: absolute;
 
     width: 424px;
@@ -536,15 +531,13 @@ nav
     border-radius: 13px;
 }
 
-.bColor1
-{
+.bColor1{
     border-color: #fcd7df;
 
     order: 1;
 }
 
-.bColor2
-{
+.bColor2{
     z-index: 1;
     right: 0;
 
@@ -553,8 +546,7 @@ nav
     order: 3;
 }
 
-.bColor3
-{
+.bColor3{
     z-index: 1;
 
     border-color: #f2d5ba;
@@ -800,19 +792,4 @@ nav
 	left: -85px;
 	top: 425px;
 
-}
-
-.border {
-  border-style: solid;
-  border-width: 6px;
-  border-color: rgb(84, 214, 161);
-  border-radius: 0px;
-  background-color: rgba(26, 228, 190, 0);
-  opacity: 0.48;
-  position: absolute;
-  left: 988px;
-  top: 8733px;
-  width: 258px;
-  height: 258px;
-  z-index: 204;
 }
