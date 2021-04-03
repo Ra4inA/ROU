@@ -36,8 +36,10 @@ dd
     *
     {
         transition-duration: .01ms !important;
-        animation-duration: .01ms !important;
-        animation-iteration-count: 1 !important;
+        -webkit-animation-duration: .01ms !important;
+                animation-duration: .01ms !important;
+        -webkit-animation-iteration-count: 1 !important;
+                animation-iteration-count: 1 !important;
 
         scroll-behavior: auto !important;
     }
@@ -496,6 +498,96 @@ nav
 /*Service*/
 
 
+.service{
+	margin-top: 200px;
+	min-width: 960px;
+}
+
+.service__title{
+	text-transform: uppercase;
+	text-align: right;
+	letter-spacing: 4px;
+}
+
+.service__subtitle{
+	margin: 0 0 0 auto;
+	text-align: right;
+	width: 735px;
+	margin-top: 40px;
+}
+
+.grid__body{
+	display: -ms-grid;
+	display: grid;
+
+
+	-ms-grid-columns: (1fr)[3];
+
+
+	grid-template-columns: repeat(3, 1fr);
+	-ms-grid-rows: 1fr 1fr 1fr 1fr ;
+	grid-template-rows: auto auto auto auto;
+	grid-column-gap: 30px;
+  	grid-row-gap: 25px;
+}
+
+.grid__item{
+  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 24px 72px 0px rgba(7, 28, 75, 0.07);
+  width: 370px;
+  height: 476px;
+
+}
+
+.placeholder{
+	width: 370px;
+	height: 80px;
+
+}
+
+.item-img{ 
+	display: block;
+	margin: 65px auto 40px auto;
+}
+
+.item__icon1-2-6{
+	width: 72px;
+}
+
+.item__icon4{
+	width: 80px;
+}
+
+.item__icon3-5{
+	width: 84px;
+}
+
+.item__title{
+
+}
+
+.item__text{
+	display: block;
+	width: 295px;
+	margin: 35px auto;
+	text-align: center;
+	font-family: "Roboto", "Arial", sans-serif;
+	color:  #5e5858;
+}
+
+.fa-long-arrow-alt-right{
+	display: block;
+	margin: 0 auto;
+	font-size: 45px;
+	margin-left: calc(50% - 20px);
+	color: #c04ae2;
+}
+
+
+/*Portfolio
+
+
 .portfolio
 {
     padding: 185px 0;
@@ -645,7 +737,7 @@ nav
 }
 
 
-/*Team*/
+/*Team
 
 
 .team{
@@ -710,7 +802,8 @@ nav
 
 .testimonial__content{
 	max-width: 565px;
-	align-self: center;
+	-ms-grid-row-align: center;
+	    align-self: center;
 	height: 100%;
 }
 
@@ -791,5 +884,7 @@ nav
 	z-index: -1;
 	left: -85px;
 	top: 425px;
+
+}
 
 }
