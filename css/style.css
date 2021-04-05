@@ -8,7 +8,7 @@
 
 html
 {
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
 }
 
 /* Убираем внешние отступы */
@@ -251,16 +251,15 @@ img
 
 /*Header*/
 
-header
-{   
+header{
     /*max-width: 1884px;*/
     margin: 0 auto;
-    margin-bottom: 185px;
+    padding-bottom: 185px;
 
     background-color: rgb(235, 234, 250);
     background-image: url(../img/header-blurElement.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
     background-size: 100%;
 }
 
@@ -352,33 +351,41 @@ nav
 .offer
 {
     display: flex;
-
+    position: relative;
     box-sizing: border-box;
-    min-width: 1460px;
     margin-top: 145px;
+}
+
+.offer__container{
+    width: 1170px;
+    margin: 0 auto;
 }
 
 .offer__content
 {
+    flex: 0 0 100%;
     z-index: 1;
 
-    width: 50%;
+    width: 50%; 
 }
 
 .offer__title
 {
+    width: 50%;
     opacity: 0;
     transform: translate(0, 120%);
     transition: all 0.5s ease;
     text-align: left;
+    transition: transform 0.4s ease,
+                opacity 0.4s ease;
+    transform: translate(0, 120%);
+    opacity: 0;
 }
 
-._active{
-    opacity: 1;
-    transform: translate(0, 0);
-}
+
 .offer__text
 {
+    width: 50%;
     font-family: 'Roboto';
     font-size: 30px;
     font-weight: 400;
@@ -388,13 +395,27 @@ nav
     text-align: left;
 
     color: #5e5858;
+    transition-delay: 1.5s;
+    transition: transform .4s ease 0.35s,
+                opacity .4s ease 0.35s;
+    transform: translate(0, 120%);
+    opacity: 0;
 }
 
-.offer__img
+.offer__img img
 {
-    overflow:hidden;
-    min-width: 860px;
-    min-height: 617px;
+   /* background-image: url(../img/offer.png);
+    background-position: left;
+    background-repeat: no-repeat;*/
+    content: "";
+ /*   min-width: 65%;*/
+    max-width: 100%;
+   /* height: 617px;*/
+    overflow: hidden;
+    /*position: absolute;
+    top: -50px;
+    left: 630px;
+    z-index: 50;*/
 }
 
 .offer__btn
@@ -408,6 +429,7 @@ nav
 
 .intro
 {
+    margin-top: 170px;
     background-image: url(../img/intro-blurElement.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -417,20 +439,29 @@ nav
 .intro__title
 {
     text-transform: uppercase;
+
+    transition: opacity .5s linear .1s;
+    opacity: 0;
 }
 
 .intro__text
 {
     width: 810px;
     margin: 30px auto;
+
+    transition: opacity .5s linear .1s;
+    opacity: 0;
 }
 
 .advantages
 {
     margin-top: 115px;
+    transition: transform .2s ease,
+                opacity .2s ease;
+    transform: translate(0, 20%);
+    opacity: 0;
+
 }
-
-
 .advantage
 {
     width: 360px;
@@ -486,6 +517,10 @@ nav
 .about__content
 {
     width: 50%;
+    transition: transform .3s ease 0.1s,
+            opacity .3s ease 0.1s;
+    transform: translate(-20%, 0);
+    opacity: 0;
 }
 
 .about__title
@@ -523,7 +558,11 @@ nav
 }
 
 .about-img
-{
+{   
+    transition: transform .2s ease,
+            opacity .2s ease;
+    transform: translate(20%, 0);
+    opacity: 0;
     position: relative;
 
     width: 740px;
@@ -567,6 +606,11 @@ nav
     text-transform: uppercase;
     text-align: right;
     letter-spacing: 4px;
+    transition: transform .2s ease,
+            opacity .2s ease;
+    transform: translate(-100%, 0);
+    opacity: 0;
+
 }
 
 .service__subtitle{
@@ -574,6 +618,10 @@ nav
     text-align: right;
     width: 735px;
     margin-top: 40px;
+    transition: transform .2s ease 0.1s,
+            opacity .2s ease 0.1s;
+    transform: translate(-100%, 0);
+    opacity: 0;
 }
 
 .service__content{
@@ -589,6 +637,10 @@ nav
     width: 370px;
     height: 476px;
     margin-top: 25px;
+    transition: transform .2s ease 0.1s,
+            opacity .2s ease 0.1s;
+    transform: translate(0, 25%);
+    opacity: 0;
 }
 
 .sItem__content{
@@ -652,13 +704,21 @@ nav
 
 .portfolio__title
 {
-    margin-bottom: 40px;
+   margin-bottom: 40px;
+   transition: transform .2s ease 0.1s,
+                opacity .2s ease 0.1s;
+    transform: translate(-50%, 0);
+    opacity: 0;
 }
 
 .portfolio__text
 {
     width: 800px;
     margin: 0 auto 125px auto;
+    transition: transform .2s ease 0.1s,
+            opacity .2s ease 0.1s;
+    transform: translate(50%, 0);
+    opacity: 0;
 }
 
 .project
@@ -715,6 +775,10 @@ nav
     width: 50%;
     margin-left: 10%;
     padding-top: 5%;
+    transition: transform .2s ease 0.1s,
+        opacity .2s ease 0.2s;
+    transform: translate(25%, 0);
+    opacity: 0;
 }
 
 .pOrder1
@@ -787,6 +851,9 @@ nav
     border-width: 0 0 2px 0;
     border-radius: 0;
     background: transparent;
+    
+    transition: opacity .3s ease 0.5s;
+    opacity: 0;
 }
 
 
@@ -800,9 +867,19 @@ nav
     background-position: center;
 }
 
+.team__title{
+    transition: opacity .2s ease 0.2s;
+    opacity: 0;
+}
+
 .team__subtitle{
     width: 800px;
     margin: 60px auto;
+
+    transition: transform .3s ease 0.3s,
+        opacity .2s ease 0.3s;
+    transform: translate(0, 75%);
+    opacity: 0;
 }
 
 .team__content{
@@ -816,6 +893,11 @@ nav
 
 .team__item{
     height: 420px;
+
+    transition: transform .7s ease 0.3s,
+        opacity 1s ease 0s;
+    transform: translate(10%, 0);
+    opacity: 0;
 }
 
 .icon__img{
@@ -857,6 +939,11 @@ nav
     -ms-grid-row-align: center;
         align-self: center;
     height: 100%;
+
+    transition: transform .3s ease 0.3s,
+        opacity .3s ease .3s;
+    transform: translate(-30%, 0);
+    opacity: 0;
 }
 
 .fa-quote-left{
@@ -936,6 +1023,11 @@ nav
 
 .testimonial-img{
     position: relative;
+
+    transition: transform .3s ease 0.3s,
+        opacity .3s ease .3s;
+    transform: translate(30%, 0);
+    opacity: 0;
 }
 
 .testimonial__img{
@@ -963,6 +1055,11 @@ nav
     background-repeat: no-repeat;
     background-position: center;
     background-color: #fff;
+
+    transition: transform .5s ease 0.2s,
+        opacity .7s ease .2s;
+    transform: translate(0, 30%);
+    opacity: 0;
 }
 
 .contact__title{
@@ -1105,6 +1202,11 @@ nav
     text-transform: uppercase;
     letter-spacing: 5px;
     text-align: left;
+
+    transition: transform .3s ease 0.1s,
+        opacity .3s ease .1s;
+    transform: translate(75%, 0);
+    opacity: 0;
 }
 
 .blog__subtitle{
@@ -1112,6 +1214,11 @@ nav
     display: inline-block;
     text-align: left;
     width: 50%;
+
+    transition: transform .3s ease 0.2s,
+        opacity .3s ease .2s;
+    transform: translate(75%, 0);
+    opacity: 0;
 }
 
 .link__wrapper{
@@ -1139,6 +1246,11 @@ nav
     border: 1px solid #b3bed1;
     border-radius: 15px;
     transition:   background-color 0.3s ease;
+
+    transition: transform .3s ease 0.2s,
+        opacity .3s ease .2s;
+    transform: translate(0, 25%);
+    opacity: 0;
 }
 
 .post:hover{
@@ -1334,4 +1446,59 @@ nav
 b{
     color: #111;
     font-weight: 700;
+}
+
+._active{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+
+/*media*/
+
+
+@media(max-width: 1150px){
+    .offer__img{
+        display: none;
+    }
+    .offer__container{
+        margin: 0 auto;
+        width: 75%;
+    }
+    .offer__title{
+        width: 100%;
+        text-align: center;
+    }
+    .offer__text{
+        width: 100%;
+        text-align: center
+    }
+   .offer__btn{
+        margin: 65px auto;
+        display: block;
+    }
+}
+@media(min-width: 767px){
+    .offer{
+        display: flex;
+    }
+    .offer__img{
+        position: relative;
+        flex: 0 0 50%;
+        transform: translate(-100%, 0px);
+
+    }
+    .offer__img img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        -o-object-fit: none;
+           object-fit: cover;
+    }
+
+
+
+}
 }
