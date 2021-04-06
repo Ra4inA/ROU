@@ -354,15 +354,16 @@ nav
     display: flex;
 
     box-sizing: border-box;
-    min-width: 1460px;
+    width: 100%;
     margin-top: 145px;
 }
 
 .offer__content
 {
+    position: relative;
     z-index: 1;
 
-    width: 50%;
+    width: 30%;
 }
 
 .offer__title
@@ -391,10 +392,25 @@ nav
 }
 
 .offer__img
-{
+{   
+    background-image: url(../img/offer.png);
     overflow:hidden;
-    min-width: 860px;
-    min-height: 617px;
+    
+}
+@media(max-width: 1719px){
+    .offer__img{
+        width: 50vw;
+        position: absolute;
+        right: 0;
+        height: 617px;
+    }
+}
+
+@media(min-width: 1720px){
+    .offer__img{
+    width: 860px;
+    height: 617px;
+    }
 }
 
 .offer__btn
