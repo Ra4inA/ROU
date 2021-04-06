@@ -402,14 +402,17 @@ nav
     opacity: 0;
 }
 
+.offer__img{
+/*    max-width: 100%;*/
+}
+
 .offer__img img
 {
    /* background-image: url(../img/offer.png);
     background-position: left;
     background-repeat: no-repeat;*/
-    content: "";
  /*   min-width: 65%;*/
-    max-width: 100%;
+    max-width:100%;
    /* height: 617px;*/
     overflow: hidden;
     /*position: absolute;
@@ -670,7 +673,7 @@ nav
 .item__title{
 
 }
-
+    
 .item__text{
     display: block;
     width: 295px;
@@ -684,7 +687,7 @@ nav
     position: absolute;
     display: block;
     margin: 0 auto;
-    font-size: 45px;
+    font-size: 45px !important;
     margin-left: calc(50% - 20px);
     color: #c04ae2;
     top: 290px;
@@ -1455,7 +1458,68 @@ b{
 
 
 /*media*/
+@media(max-width: 1230px){
+    .container{
+        width: 90%;
 
+    }
+    .advantage{
+        margin-right: 10px;
+        
+    }
+
+    .advantage:last-child{
+        margin-right: 0;
+    }
+
+   
+    .service__content{
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+
+    .about__content{
+        width: 100%;
+    }
+
+    .item{
+        margin: 2%;
+    }
+
+    .about-img{
+        margin-left: 5%;
+    }
+    .about1{
+        display: block;
+        position: static;
+        margin: 0 0 0 auto;
+    }
+    .about2{
+        display: none;
+    }
+
+    .service{
+        min-width: 0;
+    }
+    .service__title{
+        display: block;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .service__subtitle{
+        display: block;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .service__content{
+        margin: auto;
+    }
+}
 
 @media(max-width: 1150px){
     .offer__img{
@@ -1476,8 +1540,62 @@ b{
    .offer__btn{
         margin: 65px auto;
         display: block;
+
     }
 }
+
+@media(max-width: 995px){
+    .about__title{
+       text-align: center;
+    }
+    .about__text1{
+       text-align: center;
+    }
+    .about__text2{
+       text-align: center;
+    }
+
+    .know-btn{
+        display: block;
+        margin: 50px auto;
+    }
+    .about-img{
+        display: none;
+    }
+}
+
+@media(max-width: 900px){
+    .service__content{
+        display: block;
+    }
+    
+    .item{
+        margin: 25px auto;
+    }
+
+    .advantage{
+    .padding: 25px 10px;
+    }
+
+    .advantage__title{
+     margin-top: 10%;
+   }
+
+   .advantage__text{
+        margin-top: 5%;
+   }
+}
+
+@media(max-width: 700px){
+    .advantages{
+        display: block;
+
+    }
+    .advantage{
+        margin: auto;
+    }
+} 
+
 @media(min-width: 767px){
     .offer{
         display: flex;
