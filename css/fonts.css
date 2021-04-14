@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Poppins';
-    src: url('subset-Poppins-Regular.woff2') format('woff2'),
-        url('subset-Poppins-Regular.woff') format('woff'),
-        url('subset-Poppins-Regular.ttf') format('truetype');
+    src: url('../fonts/subset-Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/subset-Poppins-Regular.woff') format('woff'),
+        url('../fonts/subset-Poppins-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -10,9 +10,9 @@
 
 @font-face {
     font-family: 'Overpass';
-    src: url('subset-Overpass-Bold.woff2') format('woff2'),
-        url('subset-Overpass-Bold.woff') format('woff'),
-        url('subset-Overpass-Bold.ttf') format('truetype');
+    src: url('../fonts/subset-Overpass-Bold.woff2') format('woff2'),
+        url('../fonts/subset-Overpass-Bold.woff') format('woff'),
+        url('../fonts/subset-Overpass-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -20,9 +20,9 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('subset-Poppins-Medium.woff2') format('woff2'),
-        url('subset-Poppins-Medium.woff') format('woff'),
-        url('subset-Poppins-Medium.ttf') format('truetype');
+    src: url('../fonts/subset-Poppins-Medium.woff2') format('woff2'),
+        url('../fonts/subset-Poppins-Medium.woff') format('woff'),
+        url('../fonts/subset-Poppins-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -30,9 +30,9 @@
 
 @font-face {
     font-family: 'Overpass';
-    src: url('subset-Overpass-Regular.woff2') format('woff2'),
-        url('subset-Overpass-Regular.woff') format('woff'),
-        url('subset-Overpass-Regular.ttf') format('truetype');
+    src: url('../fonts/subset-Overpass-Regular.woff2') format('woff2'),
+        url('../fonts/subset-Overpass-Regular.woff') format('woff'),
+        url('../fonts/subset-Overpass-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -40,9 +40,9 @@
 
 @font-face {
     font-family: 'Overpass';
-    src: url('subset-Overpass-ExtraBold.woff2') format('woff2'),
-        url('subset-Overpass-ExtraBold.woff') format('woff'),
-        url('subset-Overpass-ExtraBold.ttf') format('truetype');
+    src: url('../fonts/subset-Overpass-ExtraBold.woff2') format('woff2'),
+        url('../fonts/subset-Overpass-ExtraBold.woff') format('woff'),
+        url('../fonts/subset-Overpass-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
@@ -50,9 +50,9 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('subset-Poppins-Bold.woff2') format('woff2'),
-        url('subset-Poppins-Bold.woff') format('woff'),
-        url('subset-Poppins-Bold.ttf') format('truetype');
+    src: url('../fonts/subset-Poppins-Bold.woff2') format('woff2'),
+        url('../fonts/subset-Poppins-Bold.woff') format('woff'),
+        url('../fonts/subset-Poppins-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -60,9 +60,9 @@
 
 @font-face {
     font-family: 'Roboto';
-    src: url('subset-Roboto-Regular.woff2') format('woff2'),
-        url('subset-Roboto-Regular.woff') format('woff'),
-        url('subset-Roboto-Regular.ttf') format('truetype');
+    src: url('../fonts/subset-Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/subset-Roboto-Regular.woff') format('woff'),
+        url('../fonts/subset-Roboto-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
