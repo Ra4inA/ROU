@@ -308,7 +308,7 @@ nav{
     display: flex;
     position: relative;
     box-sizing: border-box;
-    margin-top: 145px;
+    margin-top: 130px;
 }
 
 .offer__container{
@@ -2059,9 +2059,6 @@ b{
          margin: auto;
     }
 
-    .footer__img{
-    }
-
     .column_1__text{
         text-align: center;
     }
@@ -2069,9 +2066,11 @@ b{
     .footer__form{
         width: 100%;
     }
+
     .fForm__item{
         width: 97%;
     }
+
     .spoilers{
         margin-top: 50px;
         display: block;
